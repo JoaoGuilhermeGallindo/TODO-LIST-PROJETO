@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-image: url("https://wallpapercave.com/wp/wp4974476.jpg");
+    background-size: cover;
+    line-height: 1.5;
+    line-height: 24px;
+}
+
+h1 {
+    text-align: center; 
+    color: #333; 
+    font-size: 40px;
+    line-height: 50px;
+}
+
+ul {
+    padding-left: 20px; 
+}
+.container {
+    background-color: #9bd2e2; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 60px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 400px; 
+    max-width: 100%; 
+    line-height: 2.8;
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+    font: bold 1.0em 'Century Gothic';
+    text-transform: uppercase;
+    line-height: 3.0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container::before, .container::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    z-index: -1;
+    top: -15px; 
+    left: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear infinite;
+
+}
+@keyframes AnimarBorda{
+0%{
+ background-position: 0;
+}
+100%{
+background-position: 300%;
+}
+
+}
+.container::after{
+    filter: blur(50px);
+}
+.checked {
+    text-decoration: line-through;
+    color: blueviolet;
+}
+
+.close {
+    cursor: pointer;
+    color: red;
+}
+
+.button {
+    padding: 10px;
+    background-color: #206db1;
+    color: rgb(7, 250, 250);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    background-color: #3bc22e;
+}
+
+.input {
+   margin-right: 10px;
+
+}
